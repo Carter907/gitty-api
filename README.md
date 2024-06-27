@@ -20,10 +20,10 @@ let projects = await getAllRepos('[user]')
 ```
 Get Repositories with at least a certain number of forks
 ```js
-let moreThan4Forks = await getReposWithForks('[user]', 5)
+let moreThan4Forks = await getReposWithForks('[user]', 5) // 5 or more forks
 ```
 Get Repositories with at least a certain number of stars
 ```js
-let popularRepositories = await getReposWithStarts('[user]', 1000)
+let popularRepositories = await getReposWithStarts('[user]', 1000) // 1000 or more stars
 ```
 
