@@ -14,8 +14,12 @@ npm i @carte_907/gitty-api
 ```
 
 ### Usage
-To get all the repositories from your github page simply write the following:
+Get all of a user's repositories
 ```js
 let projects = await getAllRepos('[your username]')
+```
+Get Repositories with at least a certain number of forks
+```js
+let moreThan4Forks = await getReposWithForks('[your username]')
 ```
 
