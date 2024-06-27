@@ -6,3 +6,9 @@ gitty api is a set of functions that allows you to interface with your github re
 
 gitty api uses your api token to make requests. Please set an environment variable called `GH_API_TOKEN`
 set to your token to successfully call these functions.
+
+### Install
+
+```
+npm i @carte_907/gitty-api
+```
