@@ -16,10 +16,14 @@ npm i @carte_907/gitty-api
 ### Usage
 Get all of a user's repositories
 ```js
-let projects = await getAllRepos('[your username]')
+let projects = await getAllRepos('[user]')
 ```
 Get Repositories with at least a certain number of forks
 ```js
-let moreThan4Forks = await getReposWithForks('[your username]')
+let moreThan4Forks = await getReposWithForks('[user]', 5)
+```
+Get Repositories with at least a certain number of stars
+```js
+let popularRepositories = await getReposWithStarts('[user]', 1000)
 ```
 
