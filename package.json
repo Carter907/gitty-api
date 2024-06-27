@@ -1,0 +1,19 @@
+{
+  "name": "@carte_907/gitty-api",
+  "version": "1.0.2",
+  "description": "A github api wrapper for quick and easy access or your github repositories",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "github-api"
+  ],
+  "author": "Carter S.",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.9"
+  }
+}
