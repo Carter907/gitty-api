@@ -8,7 +8,14 @@ gitty api uses your api token to make requests. Please set an environment variab
 set to your token to successfully call these functions.
 
 ### Install
-
+use npm to install this package
 ```
 npm i @carte_907/gitty-api
 ```
+
+### Usage
+To get all the repositories from your github page simply write the following:
+```js
+let projects = await getAllRepos('[your username]')
+```
+
