@@ -3,6 +3,7 @@ export interface Project {
   owner: string,
   private: boolean,
   url: string,
+  commits: number,
   description: string,
   stars: number,
   watchers: number,
@@ -36,10 +37,12 @@ export default async function getAllRepos(username: string): Promise<Project[]> 
     let project: Project;
     data.forEach((repo: any) => {
 
+      console.log(repo)
       project = {
         name: repo.name,
         owner: repo.owner.login,
         private: repo.private,
+        commits: repo.commits,
         url: repo.html_url,
         description: repo.description,
         stars: repo.stargazers_count,
